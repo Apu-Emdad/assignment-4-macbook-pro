@@ -12,7 +12,7 @@ const delivery2 = document.getElementById("delivery-2");
 const promoButton = document.getElementById("apply-promo");
 //button variable initialization end
 
-// location initialization
+// location initialization start
 let memoryCost = document.getElementById("memory-cost");
 let storageCost = document.getElementById("storage-cost");
 let deliveryCost = document.getElementById("delivery-cost");
@@ -92,4 +92,4 @@ promoButton.addEventListener("click", function () {
   promoButton.setAttribute("disabled", true);
 });
 //discount end
-// defining event listener functions start
+// defining event listener functions end
