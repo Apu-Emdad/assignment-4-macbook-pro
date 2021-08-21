@@ -17,7 +17,107 @@
 
 <body>
 
-    <p>hello</p>
+    <section class="container mt-5">
+        <div class="row gx-5">
+
+            <!-- main section left -->
+            <div class="col-6"><img src="assets/images/mac.png" alt="" class="img-fluid">
+            </div>
+
+            <!-- main section right  -->
+            <div class="col-6">
+                <!-- main section heading and description -->
+                <div>
+                    <h1>
+                        Customize your Blue 24-inch iMac with Apple M1 chip.
+                    </h1>
+                    <p>
+                        Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                        16-core Neural Engine8GB unified memory256GB SSD storageTwo Thunderbolt / USB 4 portsMagic
+                        MouseMagic Keyboard - US English
+                    </p>
+                </div>
+
+                <!-- memory  -->
+                <div class="memeory">
+                    <p class="fw-bold mb-0">Memory</p>
+                    <button class="btn btn-outline-dark" id="memory-1">8GB unified memory</button>
+                    <button class="btn btn-outline-dark" id="memory-2">16GB unified memory</button>
+                </div>
+
+                <!-- storage -->
+                <div class="storage mt-4">
+                    <p class="fw-bold mb-0">Storage</p>
+                    <button class="btn btn-outline-dark" id="storage-1">256GB SSD storage</button>
+                    <button class="btn btn-outline-dark" id="storage-2">512GB SSD storage</button>
+                    <button class="btn btn-outline-dark" id="storage-3">1TB SSD storage</button>
+                </div>
+
+                <!-- delivery option -->
+                <div class="delivery mt-4">
+                    <p class="fw-bold mb-0">Choose your delivary option</p>
+                    <button class="btn btn-outline-dark" id="delivery-1">Friday, Aug 25 FREE Prime delivery</button>
+                    <button class="btn btn-outline-dark" id="delivery-2">Monday, Aug 21 Delivery charge $20</button>
+                </div>
+
+                <!-- calculating total -->
+                <div class='calculation mt-5'>
+                    <table class="table w-50 fw-bold">
+                        <thead>
+                            <tr>
+
+                                <th scope="col">Best Price</th>
+                                <th scope="col">$<span id='base-price'>1299</span> </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td>Extra Memory cost</td>
+                                <td>$<span id='memory-cost'>0</span></td>
+
+                            </tr>
+                            <tr>
+
+                                <td>Extra storage cost</td>
+                                <td>$<span id='storage-cost'>0</span></td>
+
+                            </tr>
+                            <tr>
+
+                                <td>Delivery charge</td>
+                                <td>$<span id='delivery-cost'>0</span></td>
+
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <td>Total Price</td>
+                            <td>$<span id='total-price'>1299</span></td>
+                        </tfoot>
+                    </table>
+
+                </div>
+
+                <!-- promo section  -->
+                <div class='promo mt-5'>
+                    <p class="mb-0">Add Promo Code</p>
+                    <div class="d-flex">
+                        <input id='promo-code' class="border-secondary  w-50 rounded p-2" type="text">
+                        <button id='apply-promo' class='btn btn-danger py-2' disabled>apply</button>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <hr class="container">
+    <footer class="container mb-5">
+        <h1 class="d-table mx-auto">Total: $<span id="discount-total">1299</span></h1>
+    </footer>
 
     <!-- bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
