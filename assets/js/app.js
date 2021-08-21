@@ -84,7 +84,7 @@ userInput.addEventListener('keyup', function(event){
 
 promoButton.addEventListener('click',function(){
     discount();
-    // promoButton.setAttribute('disabled',true);
+    promoButton.setAttribute('disabled',true);
 });
 
 
